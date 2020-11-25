@@ -1,5 +1,6 @@
 package redi.sbframework.jokes.jokeapp;
 
+import guru.springframework.norris.chuck.ChuckNorrisQuotes;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -8,6 +9,7 @@ public class JokeappApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(JokeappApplication.class, args);
+		ChuckNorrisQuotes quotes = new ChuckNorrisQuotes();
+		System.out.println(quotes.getRandomQuote());
 	}
-
 }
