@@ -9,7 +9,5 @@ public class JokeappApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(JokeappApplication.class, args);
-		ChuckNorrisQuotes quotes = new ChuckNorrisQuotes();
-		System.out.println(quotes.getRandomQuote());
 	}
 }
